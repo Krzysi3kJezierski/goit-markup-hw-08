@@ -1,0 +1,64 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --blue: #2196f3;
+    --dark: #212121;
+    --darkfooter: #2f303a;
+    --grey: #f5f4fa;
+    --darkgrey: #757575;
+    --whitetrans: #ffffff99;
+}
+
+$colors: (
+    "main-color": var(--blue),
+    "main-text": var(--dark),
+    "secondary-text": var(--darkgrey),
+    "buttons&team-background": var(--grey),
+    "footer-background": var(--darkfooter),
+    "footer-links": var(--whitetrans),
+    "icon-footer-background": rgba(255, 255, 255, 0.1),
+    "companies&icons": #afb1b8,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+body {
+    font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+    font-style: normal;
+    color: getColor("main-text");
+    align-items: center;
+    min-width: 320px;
+}
+
+.relative {
+    position: relative;
+}
+
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-row {
+    flex-direction: row;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-baseline {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+}
