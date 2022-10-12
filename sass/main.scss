@@ -2,6 +2,10 @@
 @import "./utils/variables";
 @import "./utils/visually-hidden";
 
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
+
 @import "./components/background";
 @import "./components/buttons";
 @import "./components/companylinks";
@@ -17,6 +21,3 @@
 @import "./components/team";
 @import "./components/whatwedo";
 
-@import "./base/common";
-@import "./base/container";
-@import "./base/section";
