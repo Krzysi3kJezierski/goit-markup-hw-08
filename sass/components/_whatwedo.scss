@@ -1,6 +1,7 @@
 .photo-whatwedo {
     &:not(:last-child) {
         padding-right: 30px;  
+        
     }
     &__figcaption {
         position: absolute;
@@ -11,10 +12,16 @@
         justify-content: center;
         align-items: center;
         color: rgba(255, 255, 255, 1); 
+       
     }
 }
         @media screen and (min-width: 320px) and (max-width: 1199px) {
             .what-we-do {
                 display: none;
     }
+}
+
+.whatwedo-section {
+    display: flex;
+    flex-flow: row-wrap;
 }

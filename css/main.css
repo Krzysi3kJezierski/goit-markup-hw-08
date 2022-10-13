@@ -92,6 +92,82 @@ body {
     width: 1px !important;
     overflow: hidden;
 }*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+}
+
+.section {
+  margin: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.section__heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section--header {
+  border-bottom: 1px solid #ececec;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    margin: 94px 0;
+  }
+}
 .index-background {
   text-align: center;
   width: 100%;
@@ -1655,79 +1731,12 @@ body {
     display: none;
   }
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-ul,
-ol,
-p {
+.whatwedo-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 100%;
-  max-width: 1200px;
-  min-width: 320px;
-}
-
-.section {
-  margin: 60px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-.section__heading {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
-}
-.section--header {
-  border-bottom: 1px solid #ececec;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 1200px) {
-  .section {
-    margin: 94px 0;
-  }
+      -ms-flex-flow: row-wrap;
+          flex-flow: row-wrap;
 }/*# sourceMappingURL=main.css.map */
